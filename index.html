@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="icon.png">
+		<link rel="stylesheet" href="./css/main.css">
+		<title>Calender</title>
+	</head>
+	<body>
+		<form class="header" onsubmit="if(Year.value>0){Year.blur();CreateDate(Year.value, false)}; return false;">
+			<input type="number" placeholder="enter year" value="" id="Year">
+			<button type="button" onclick="CreateDate(new Date().getFullYear(), true)" >Go Today</button>
+		</form>
+		<div id="Calender"></div>
+		<div class="footer">Created by <a href="https://co-ordinate.tech" >Co-ordinate Technologies</a></body>
+	</body>
+
+<script type="text/javascript" src="./js/main.js"></script>
+
+</html>
